@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title><span data-gr="Μενού Καταστήματος" data-en="Store Menu">Μενού Καταστήματος</span></title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #fdfdfd;
+      color: #333;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #b22222;
+      border-bottom: 1px solid #ddd;
+      margin-top: 30px;
+    }
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .column {
+      flex: 1;
+      min-width: 250px;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      margin: 6px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px dashed #ccc;
+      padding-bottom: 4px;
+
+    }
+    .price {
+      font-weight: bold;
+      color: #555;
+    }
+    .description-block {
+      margin-top: 6px;
+      font-size: 0.9em;
+      color: #555;
+    }
+    .complex-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .complex-header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+
+<div style="text-align: center; margin-bottom: 50px;">
+<div style="text-align: center; margin-bottom: 20px;">
+  <label for="languageSelect">🌐 Γλώσσα / Language: </label>
+  <select id="languageSelect" onchange="switchLanguage()">
+    <option value="gr">Ελληνικά</option>
+    <option value="en">English</option>
+  </select>
+</div>
+
+  <img src="image.jpg" alt="Ligderie Street Food Logo" style="max-width: 260px; height: auto;">
+</div>
+
+
+
+  <h1>🍽️ <span data-gr="Μενού Καταστήματος" data-en="Store Menu">Μενού Καταστήματος</span></h1>
+
+  <div class="columns">
+    <div class="column">
+      <h2><span data-gr="Πίτα / Ψωμάκι" data-en="Pita / Bread Roll">Πίτα / Ψωμάκι</span></h2>
+      <ul>
+        <li><span><span data-gr="Γύρος Χοιρινός" data-en="Pork Gyro">Γύρος Χοιρινός</span></span><span class="price">3,70€</span></li>
+        <li><span><span data-gr="Γύρος Κοτόπουλο" data-en="Chicken Gyro">Γύρος Κοτόπουλο</span></span><span class="price">3,70€</span></li>
+        <li><span><span data-gr="Σουβλάκι Χοιρινό" data-en="Pork Souvlaki">Σουβλάκι Χοιρινό</span></span><span class="price">3,30€</span></li>
+        <li><span><span data-gr="Σουβλάκι Κοτόπουλο" data-en="Chicken Souvlaki">Σουβλάκι Κοτόπουλο</span></span><span class="price">3,30€</span></li>
+        <li><span><span data-gr="Πανσέτα" data-en="Pork Belly(Pancetta)">Πανσέτα</span></span><span class="price">3,50€</span></li>
+        <li><span><span data-gr="Μπιφτέκι" data-en="Pork Burger">Μπιφτέκι</span></span><span class="price">3,30€</span></li>
+        <li><span><span data-gr="Μπιφτέκι Γεμιστό" data-en="Pork Burger Stuffed With Gouda">Μπιφτέκι Γεμιστό</span></span><span class="price">3,50€</span></li>
+        <li><span><span data-gr="Μπιφτέκι Λαχανικών" data-en="Vegetable Burger">Μπιφτέκι Λαχανικών</span></span><span class="price">3,50€</span></li>
+        <li><span><span data-gr="Λουκάνικο" data-en="Sausage">Λουκάνικο</span></span><span class="price">3,30€</span></li>
+        <li><span><span data-gr="Κοτομπουκιές" data-en="Chicken Nuggets">Κοτομπουκιές</span></span><span class="price">3,30€</span></li>
+        <li><span><span data-gr="Σις Κεμπάπ" data-en="Small Kebab (Lamb with Beef)">Σις Κεμπάπ</span></span><span class="price">3,30€</span></li>
+        <li><span><span data-gr="Πατάτες" data-en="Fries">Πατάτες</span></span><span class="price">2,50€</span></li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h2><span data-gr="Τορτίγια / Μερίδες" data-en="Tortilla / Portions">Τορτίγια / Μερίδες</span></h2>
+      <ul>
+        <li><span><span data-gr="Γύρος Χοιρινός" data-en="Pork Gyro">Γύρος Χοιρινός</span></span><span class="price">4,70€ / 8,00€</span></li>
+        <li><span><span data-gr="Γύρος Κοτόπουλο" data-en="Chicken Gyro">Γύρος Κοτόπουλο</span></span><span class="price">4,70€ / 8,00€</span></li>
+        <li><span><span data-gr="Κοτομπέικον" data-en="Chicken Bacon">Κοτομπέικον</span></span><span class="price">3,50€</span></li>
+        <li><span><span data-gr="Πανσέτα" data-en="Pork Belly(Pancetta)">Πανσέτα</span></span><span class="price">3,80€ / 7,50€</span></li>
+        <li><span><span data-gr="Σουβλάκι Χοιρινό" data-en="Pork Souvlaki">Σουβλάκι Χοιρινό</span></span><span class="price">3,80€ / 7,50€</span></li>
+        <li><span><span data-gr="Σουβλάκι Κοτόπουλο" data-en="Chicken Souvlaki">Σουβλάκι Κοτόπουλο</span></span><span class="price">3,80€ / 7,50€</span></li>
+        <li><span><span data-gr="Κοτομπουκιές" data-en="Chicken Nuggets">Κοτομπουκιές</span></span><span class="price">4,00€ / 7,50€</span></li>
+        <li><span><span data-gr="Μπιφτέκι" data-en="Pork Burger">Μπιφτέκι</span></span><span class="price">3,80€ / 8,00€</span></li>
+        <li><span><span data-gr="Μπιφτέκι Γεμιστό" data-en="Pork Burger Stuffed With Gouda">Μπιφτέκι Γεμιστό</span></span><span class="price">3,80€ / 8,00€</span></li>
+        <li><span><span data-gr="Μπιφτέκι Mοσχαρίσιο" data-en="Beef Burger">Μπιφτέκι Mοσχαρίσιο</span></span><span class="price">4,00€ / 8,00€</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <h2><span data-gr="Extra" data-en="Extras">Extra</span></h2>
+  <ul>
+    <li><span><span data-gr="Αλοιφές" data-en="Sauces">Αλοιφές</span></span><span class="price">0,30€</span></li>
+  </ul>
+
+  <h2><span data-gr="Club Sandwich" data-en="Club Sandwich">Club Sandwich</span></h2>
+  <div class="columns">
+    <div class="column">
+      <ul>
+        <li><span><span data-gr="Γύρος Χοιρινός" data-en="Pork Gyro">Γύρος Χοιρινός</span></span><span class="price">5,30€</span></li>
+        <li><span><span data-gr="Γύρος Κοτόπουλο" data-en="Chicken Gyro">Γύρος Κοτόπουλο</span></span><span class="price">5,30€</span></li>
+        <li><span><span data-gr="Πανσέτα" data-en="Pork Belly(Pancetta)">Πανσέτα</span></span><span class="price">5,30€</span></li>
+        <li><span><span data-gr="Σουβλάκι Χοιρινό" data-en="Pork Souvlaki">Σουβλάκι Χοιρινό</span></span><span class="price">4,00€</span></li>
+      </ul>
+    </div>
+    <div class="column">
+      <ul>
+        <li><span><span data-gr="Σουβλάκι Χοιρινό" data-en="Pork Souvlaki(2 pieces)">Σουβλάκι Χοιρινό(2 τεμάχια)</span></span><span class="price">5,50€</span></li>
+        <li><span><span data-gr="Σουβλάκι Κοτόπουλο" data-en="Chicken Souvlaki">Σουβλάκι Κοτόπουλο</span></span><span class="price">4,00€</span></li>
+        <li><span><span data-gr="Σουβλάκι Κοτόπουλο" data-en="Chicken Souvlaki(2 pieces)">Σουβλάκι Κοτόπουλο(2 τεμάχια)</span></span><span class="price">5,50€</span></li>
+        <li><span><span data-gr="Κοτομπουκιές" data-en="Chicken Nuggets">Κοτομπουκιές</span></span><span class="price">5,30€</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="columns">
+    <div class="column">
+      <h2><span data-gr="Premium Sandwich" data-en="Premium Sandwich">Premium Sandwich</span></h2>
+      <ul>
+        <li class="complex-item">
+          <div class="complex-header">
+            <span><span data-gr="Τορτίγια Ligderie" data-en="Tortilla Ligderie">Τορτίγια Ligderie</span></span>
+            <span class="price">5,00€</span>
+          </div>
+          <div class="description-block">
+            <span data-gr="2 Ζουμερά Σουβλάκια Κοτόπουλο σε Τορτίγια με μπέικον, μουσταρδομέλο, ντομάτα, μαρούλι, παρμεζάνα και πατάτες"  data-en="2 Chicken Souvlakis in a Tortilla with bacon, honey mustard, tomato, lettuce, parmesan cheese and fries">2 Ζουμερά Σουβλάκια Κοτόπουλο σε Τορτίγια με μπέικον, μουσταρδομέλο, ντομάτα, μαρούλι΄,παρμεζάνα και πατάτες 
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="column">
+      <h2><span data-gr="Burger" data-en="Burger">Burger</span></h2>
+      <ul>
+        <li class="complex-item">
+          <div class="complex-header">
+            <span><span data-gr="Burger" data-en="Burger">Burger</span></span>
+            <span class="price">6,50€</span>
+          </div>
+          <div class="description-block">
+            <span data-gr="Μπιφτέκι Μοσχαρίσιο 200γρ., iceberg, καραμελωμένα κρεμμύδια, ντομάτα, μπέικον, BBQ σως και ζεστό Cheddar" data-en="200g Beef Burger with iceberg, caramelized onions, tomato, bacon, BBQ sauce & melted Cheddar cheese">Μπιφτέκι Μοσχαρίσιο 200γρ., iceberg, καραμελωμένα κρεμμύδια, ντομάτα, μπέικον, BBQ σως και ζεστό Cheddar
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <footer style="text-align: center; margin-top: 50px; font-size: 1em; color: #555;">
+  <hr style="margin-bottom: 15px;">
+  <p>Follow us on:
+    <a href="https://www.facebook.com/share/1AutbFhY73/" target="_blank" style="margin: 0 10px; text-decoration: none; color: #3b5998;">Facebook</a> |
+    <a href="https://www.instagram.com/ligderie_street_food?igsh=MXFkN2kzbmxxZjRxdA==" target="_blank" style="margin: 0 10px; text-decoration: none; color: #c32aa3;">Instagram</a>
+  </p>
+</footer>
+
+
+
+<script>
+  function switchLanguage() {
+    const selectedLang = document.getElementById('languageSelect').value;
+    const elements = document.querySelectorAll('[data-gr][data-en]');
+    elements.forEach(el => {
+      el.textContent = selectedLang === 'en' ? el.dataset.en : el.dataset.gr;
+    });
+  }
+</script>
+</body>
+</html>
